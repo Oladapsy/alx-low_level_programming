@@ -8,6 +8,7 @@
  * @head: pointer to the head node
  *
  * @n: the data of the new node
+ * Return: the new node pointer
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
