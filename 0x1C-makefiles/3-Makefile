@@ -28,7 +28,7 @@ clean:
 	${RM} *~ ${NAME}
 
 oclean:
-	${RM} *${NAME}
+	${RM} ${NAME}
 
 fclean: clean oclean
 
