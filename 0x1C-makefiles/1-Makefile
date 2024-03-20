@@ -6,7 +6,7 @@
 # SRC: the .c files
 
 CC := gcc
-SRC := (*.c)
+SRC := main.c school.c
 
 all: main.c school.c
 	${CC} ${SRC} -o school
