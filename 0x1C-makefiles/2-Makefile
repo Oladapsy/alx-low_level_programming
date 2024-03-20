@@ -12,11 +12,11 @@
 #	You are not allowed to have a list of all the .o files
 
 CC = gcc
-SR = main.c school.c
+SRC = main.c school.c
 OBJ = main.o school.o
 NAME = school
 
-all: main.o school.o
+all: ${OBJ}
 	${CC} ${OBJ} -o ${NAME}
 
 main.o: main.c
