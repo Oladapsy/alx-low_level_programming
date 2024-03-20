@@ -1,0 +1,8 @@
+# the first make file
+# name of the executable : school
+# rules: all
+# the all: build the executable
+# variable nonne
+
+all: main.c school.c
+	gcc main.c school.c -o school
