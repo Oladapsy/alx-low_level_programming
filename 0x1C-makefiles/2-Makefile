@@ -1,0 +1,26 @@
+#Create your first useful Makefile.
+#Requirements:
+#name of the executable: school
+#	rules: all
+#	The all rule builds your executable
+#variables: CC, SRC, OBJ, NAME
+#	CC: the compiler to be used
+#SRC: the .c files
+#	OBJ: the .o files
+#NAME: the name of the executable
+#	The all rule should recompile only the updated source files
+#	You are not allowed to have a list of all the .o files
+
+CC = gcc
+SR = main.c school.c
+OBJ = main.o school.o
+NAME = school
+
+all: main.o school.o
+	${CC} ${OBJ} -o ${NAME}
+
+main.o: main.c
+	${CC} -c -o main.o main.c
+
+school.o: school.c
+	${CC} -c -o school.o school.c
